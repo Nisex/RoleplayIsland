@@ -1,0 +1,23 @@
+// DM Environment file for DM - Roleplay Island.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "00. Vars.dm"
+#include "01. World Info.dm"
+#include "02. Player verbs.dm"
+#include "03. Player Location.dm"
+#include "04. Admin.dm"
+#include "Simple interface.dmf"
+// END_INCLUDE
+

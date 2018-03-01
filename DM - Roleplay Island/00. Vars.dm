@@ -1,0 +1,3 @@
+mob
+	var
+		setcolor = "Red"
