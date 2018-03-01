@@ -58,7 +58,7 @@ window "default"
 	elem "default"
 		type = MAIN
 		pos = 281,0
-		size = 878x653
+		size = 878x650
 		anchor1 = none
 		anchor2 = none
 		background-color = #000000
@@ -67,6 +67,20 @@ window "default"
 		keep-aspect = true
 		macro = "macro"
 		menu = "menu"
+	elem "info1"
+		type = INFO
+		pos = 566,40
+		size = 296x408
+		anchor1 = 65,6
+		anchor2 = 98,69
+		text-color = #ffffff
+		background-color = #000000
+		border = sunken
+		drop-zone = false
+		saved-params = ""
+		highlight-color = #00ffff
+		tab-text-color = #ffffff
+		tab-background-color = #000000
 	elem "label2"
 		type = LABEL
 		pos = 16,596
@@ -123,17 +137,6 @@ window "default"
 		background-color = #000000
 		border = sunken
 		saved-params = "max-lines"
-	elem "tab1"
-		type = TAB
-		pos = 552,40
-		size = 304x408
-		anchor1 = 63,6
-		anchor2 = 97,69
-		text-color = #ffffff
-		background-color = #000000
-		border = sunken
-		saved-params = ""
-		current-tab = "Inventory"
 	elem "ic"
 		type = OUTPUT
 		pos = 16,40

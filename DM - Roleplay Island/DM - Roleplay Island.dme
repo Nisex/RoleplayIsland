@@ -18,6 +18,7 @@
 #include "02. Player verbs.dm"
 #include "03. Player Location.dm"
 #include "04. Admin.dm"
+#include "99. Login.dm"
 #include "Simple interface.dmf"
 // END_INCLUDE
 
