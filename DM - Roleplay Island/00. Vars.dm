@@ -1,4 +1,4 @@
 mob
 	var
-		setcolor = "Red"
+		setcolor = "#FFFFFF"
 		gm = 0

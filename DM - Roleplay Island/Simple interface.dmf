@@ -48,6 +48,11 @@ menu "menu"
 		command = ""
 		saved-params = "is-checked"
 	elem 
+		name = "Save"
+		command = "Save "
+		category = "File"
+		saved-params = "is-checked"
+	elem 
 		name = "&Quit"
 		command = ".quit"
 		category = "File"

@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1519925509
+LAST_COMPILE_TIME: 1519956886
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 511.1385
-WINDOW: 02. Player verbs.dm;99. Login.dm;00. Vars.dm;01. World Info.dm;03. Player Location.dm;04. Admin.dm;Simple interface.dmf
-FILE: 04. Admin.dm
+LAST_COMPILE_VERSION: 512.1411
+WINDOW: 04. Admin.dm;99. Login.dm;03. Player Location.dm;02. Player verbs.dm;00. Vars.dm;01. World Info.dm;Simple interface.dmf
+FILE: Simple interface.dmf
 */
 // END_INTERNALS
