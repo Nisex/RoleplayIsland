@@ -11,9 +11,10 @@ mob
 			src.verbs += typesof(/mob/Admin/verb)
 			src.gm = 3
 		if(!fexists("Saves/[src.ckey].sav"))
-			src.charname = input("What is your character's name?", "Char name")
+			src.charname = input("What is your character's name?", "Character name")
 		else
 			Load()
+			src.TravelCooldown()
 		..()
 
 	Logout()
@@ -25,6 +26,13 @@ mob
 		SaveGame()
 			set name = "Save"
 			src.Save()
+	Admin
+		verb
+			SaveWorld()
+				set category = "Admin"
+				set name = "World Save"
+				WorldSave()
+				world << output("<b><font color=\"yellow\">[src] has saved the world </font></b>", "ooc")
 	proc
 		Save()
 			var/savefile/F = new("Saves/[src.ckey].sav")
@@ -40,3 +48,16 @@ mob
 			if(fexists("Saves/[src.ckey].sav"))
 				var/savefile/F = new("Saves/[src.ckey].sav")
 				Read(F)
+proc
+	WorldSave()
+		var/savefile/F = new("Saves/world.sav")
+		F["locations"] << locations
+		F["locationDescriptions"] << locationDescriptions
+		F["admins"] << admins
+
+	LoadWorld()
+		if(fexists("Saves/world.sav"))
+			var/savefile/F = new("Saves/world.sav")
+			F["locations"] >> locations
+			F["locationDescriptions"] >> locationDescriptions
+			F["admins"] >> admins

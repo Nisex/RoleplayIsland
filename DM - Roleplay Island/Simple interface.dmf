@@ -1,31 +1,10 @@
-macro "macro"
+macro "macro1"
 	elem 
-		name = "North+REP"
-		command = ".north"
+		name = "Return"
+		command = "Say "
 	elem 
-		name = "South+REP"
-		command = ".south"
-	elem 
-		name = "East+REP"
-		command = ".east"
-	elem 
-		name = "West+REP"
-		command = ".west"
-	elem 
-		name = "Northeast+REP"
-		command = ".northeast"
-	elem 
-		name = "Northwest+REP"
-		command = ".northwest"
-	elem 
-		name = "Southeast+REP"
-		command = ".southeast"
-	elem 
-		name = "Southwest+REP"
-		command = ".southwest"
-	elem 
-		name = "Center+REP"
-		command = ".center"
+		name = "O"
+		command = "OOC "
 
 
 menu "menu"

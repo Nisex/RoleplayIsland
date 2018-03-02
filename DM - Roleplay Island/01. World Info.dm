@@ -13,6 +13,10 @@ world
 	visibility = 0 //It won't be seen in the hub or the launcher
 	hub = "Playtard.RoleplayIsland"
 	hub_password = "donottemptmefrodo"
+
+	New()
+		LoadWorld()
+		..()
 var
 	global
 		setting
