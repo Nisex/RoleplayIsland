@@ -43,7 +43,7 @@ mob
 				src.TravelCooldown()
 	Admin
 		verb
-			AddLocation(loc as text)
+			Add_Location(loc as text)
 				set category = "Admin"
 				if(loc)
 					switch(input("[loc]\nAre you sure you want to create this location?", "Confirm") in list("Yes", "No"))
@@ -55,7 +55,7 @@ mob
 									locationDescriptions.Add(desc)
 									usr<<output("<font color='red'>You have added the new location - [loc]!</font>", "ooc")
 
-			ResetTravel()
+			Reset_Travel()
 				set category = "Admin"
 				var/list/playerListName = list()
 				var/list/playerList = list()

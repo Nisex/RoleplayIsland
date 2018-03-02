@@ -3,14 +3,14 @@ var/global/list/admins = list("Rubythemapper", "SoulReaver69")
 mob
 	Enforcer
 		verb
-			CheckSetting()
+			Check_Setting()
 				if(setting)
 					usr<<output("<b>Current setting: [setting]</b>", "ooc")
 				else
 					return
 	Admin
 		verb
-			ChangeSetting(sett as text)
+			Change_Setting(sett as text)
 				set category = "Admin"
 				if(sett)
 					switch(input("Are you sure you'd like the new setting to be [sett]?") in list("Yes","No"))
@@ -22,7 +22,8 @@ mob
 						if("No")
 							return
 
-			AddAdmin(mob/M in world)
+			Add_Admin(mob/M in world)
+				set category = "Admin"
 				switch(input("Are you sure you want to add [M] to the admin list?") in list("Yes","No"))
 					if("Yes")
 						if(admins.Find(M.key, 1, admins.len) != 0)
