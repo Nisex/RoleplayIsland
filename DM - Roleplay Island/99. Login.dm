@@ -1,5 +1,6 @@
 mob
 	Login()
+		winset(src,"perkwindow","is-visible=false;loc=1,1")
 		if(src.location == "")
 			src.location = locations[1]
 		src << "Welcome to Roleplay Island - Current setting: [setting]. Your current location: [location]"
@@ -26,13 +27,6 @@ mob
 		SaveGame()
 			set name = "Save"
 			src.Save()
-	Admin
-		verb
-			SaveWorld()
-				set category = "Admin"
-				set name = "World Save"
-				WorldSave()
-				world << output("<b><font color=\"yellow\">[src] has saved the world </font></b>", "ooc")
 	proc
 		Save()
 			var/savefile/F = new("Saves/[src.ckey].sav")
@@ -51,13 +45,18 @@ mob
 proc
 	WorldSave()
 		var/savefile/F = new("Saves/world.sav")
+		F["setting"] << setting
 		F["locations"] << locations
 		F["locationDescriptions"] << locationDescriptions
 		F["admins"] << admins
+		F["database"] << database
+
 
 	LoadWorld()
 		if(fexists("Saves/world.sav"))
 			var/savefile/F = new("Saves/world.sav")
+			F["setting"] >> setting
 			F["locations"] >> locations
 			F["locationDescriptions"] >> locationDescriptions
 			F["admins"] >> admins
+			F["database"] >> database

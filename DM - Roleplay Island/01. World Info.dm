@@ -1,6 +1,7 @@
 /*
 	These are simple defaults for your project.
  */
+var/global/setting
 
 world
 	fps = 25		// 25 frames per second
@@ -17,9 +18,10 @@ world
 	New()
 		LoadWorld()
 		..()
-var
-	global
-		setting
+	Del()
+		WorldSave()
+		..()
+
 
 // Make objects move 8 pixels per tick when walking
 mob

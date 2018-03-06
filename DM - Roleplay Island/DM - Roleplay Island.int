@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1520006128
+LAST_COMPILE_TIME: 1520300634
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 512.1411
-WINDOW: 03. Player Location.dm;02. Player verbs.dm;99. Login.dm;01. World Info.dm;04. Admin.dm
-FILE: 03. Player Location.dm
+LAST_COMPILE_VERSION: 512.1412
+WINDOW: 02. Player verbs.dm;06. Perk Database.dm;03. Player Location.dm;Simple interface.dmf;99. Login.dm;01. World Info.dm;05. Inventory System & Objects.dm;00. Vars.dm;04. Admin.dm;DM - Roleplay Island.dme
+FILE: 04. Admin.dm
 */
 // END_INTERNALS
