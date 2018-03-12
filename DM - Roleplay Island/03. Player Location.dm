@@ -1,7 +1,3 @@
-var/global/list/locations = list("Main Area")
-var/global/list/locationDescriptions = list("A beginning area that everyone starts on.")
-/* Could have done locations in only one list, by applying objects but decided to go with 2 lists for the sake of understanding how these work. */
-
 mob
 	verb
 		Travel()

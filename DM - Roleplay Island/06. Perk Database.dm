@@ -1,10 +1,8 @@
-var/global/list/database = list()
-
 mob
 	Admin
 		verb
 			Create_Perk()
-				set category = "Admin"
+				set category = "Perk Database"
 				var/obj/Perk/P = new/obj/Perk()
 				P.icon = input("Give an icon.") as icon
 				var/nameobj = input("Insert a name for your new perk!", "Perk name")
@@ -21,8 +19,8 @@ mob
 						return
 				database.Add(P)
 
-			View_Database()
-				set category = "Admin"
+			View_Perk_Database()
+				set category = "Perk Database"
 				var/obj/Perk/choice = input("Select a perk to see it's attributes!","Database view") as null|anything in database
 				if(!choice) return
 				for(var/obj/Perk/P in database)
@@ -33,7 +31,7 @@ mob
 						if(P.requirements != "") src << output(P.requirements, "perkwindow.reqlabel")
 
 			Delete_Perk()
-				set category = "Admin"
+				set category = "Perk Database"
 				var/obj/Perk/choice = input("Select a perk to delete!","Perk Delete") as null|anything in database
 				if(!choice) return
 				for(var/obj/Perk/P in database)
@@ -41,13 +39,13 @@ mob
 						database.Remove(P)
 
 			Give_Perk(mob/M in world)
-				set category = "Admin"
+				set category = "Perk Database"
 				var/obj/Perk/choice = input("Select a perk to give to [M.charname]!","Perk Delete") as null|anything in database
 				if(!choice) return
 				M.contents += choice
 
 			Remove_Perk_From_Player(mob/M in world)
-				set category = "Admin"
+				set category = "Perk Database"
 				var/list/perks = list()
 				for(var/obj/Perk/P in src.contents)
 					perks.Add(P)

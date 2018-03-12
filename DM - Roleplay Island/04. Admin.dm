@@ -1,5 +1,3 @@
-var/global/list/admins = list("Rubythemapper", "SoulReaver69", "Niise")
-
 mob
 	Enforcer
 		verb

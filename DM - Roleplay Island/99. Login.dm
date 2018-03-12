@@ -1,6 +1,7 @@
 mob
 	Login()
 		winset(src,"perkwindow","is-visible=false;loc=1,1")
+		winset(src,"itemwindow", "is-visible=false;loc=1,1")
 		if(src.location == "")
 			src.location = locations[1]
 		src << "Welcome to Roleplay Island - Current setting: [setting]. Your current location: [location]"
@@ -50,6 +51,8 @@ proc
 		F["locationDescriptions"] << locationDescriptions
 		F["admins"] << admins
 		F["database"] << database
+		F["itemDatabase"] << itemDatabase
+		F["techniqueDatabase"] << techniqueDatabase
 
 
 	LoadWorld()
@@ -60,3 +63,5 @@ proc
 			F["locationDescriptions"] >> locationDescriptions
 			F["admins"] >> admins
 			F["database"] >> database
+			F["itemDatabase"] >> itemDatabase
+			F["techniqueDatabase"] >> techniqueDatabase

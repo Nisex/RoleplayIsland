@@ -20,6 +20,7 @@
 #include "04. Admin.dm"
 #include "05. Inventory System & Objects.dm"
 #include "06. Perk Database.dm"
+#include "07. Item Database.dm"
 #include "99. Login.dm"
 #include "Simple interface.dmf"
 // END_INCLUDE

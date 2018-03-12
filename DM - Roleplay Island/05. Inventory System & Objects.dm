@@ -22,3 +22,20 @@ obj
 	Item
 		name = ""
 		desc = ""
+		var/requirements = ""
+		Click()
+			winset(usr,"itemwindow","is-visible=true;")
+			usr << output(src.name, "itemwindow.namelabel")
+			usr << output(src.desc, "itemwindow.desclabel")
+			if(src.requirements != "") usr << output(src.requirements, "perkwindow.reqlabel")
+
+	Technique
+		name = ""
+		desc = ""
+		var/requirements = ""
+		var/turncooldown = 3
+		Click()
+			winset(usr, "techniqueWindow", "is-visible=true;")
+			usr << output(src.name, "techniqueWindow.namelabel")
+			usr << output(src.desc, "techniqueWindow.desclabel")
+			if(src.requirements != "") usr << output(src.requirements, "techniqueWindow.reqlabel")

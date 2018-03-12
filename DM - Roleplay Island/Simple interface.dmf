@@ -133,6 +133,76 @@ window "default"
 		saved-params = "max-lines"
 		enable-http-images = true
 
+window "itemWindow"
+	elem "itemWindow"
+		type = MAIN
+		pos = 281,0
+		size = 209x282
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Item"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+	elem "label4"
+		type = LABEL
+		pos = 74,9
+		size = 60x20
+		anchor1 = 35,3
+		anchor2 = 64,10
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Perk Name: "
+	elem "label3"
+		type = LABEL
+		pos = 74,84
+		size = 60x20
+		anchor1 = 35,30
+		anchor2 = 64,37
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Description:"
+	elem "reqlabel"
+		type = LABEL
+		pos = 20,240
+		size = 168x28
+		anchor1 = 18,78
+		anchor2 = 83,88
+		text-color = #ffffff
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = ""
+		text-wrap = true
+	elem "desclabel"
+		type = LABEL
+		pos = 20,108
+		size = 168x118
+		anchor1 = 10,27
+		anchor2 = 90,69
+		text-color = #ffffff
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = ""
+		text-wrap = true
+	elem "namelabel"
+		type = LABEL
+		pos = 20,33
+		size = 168x43
+		anchor1 = 24,4
+		anchor2 = 76,19
+		text-color = #ffffff
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = ""
+		text-wrap = true
+
 window "perkwindow"
 	elem "perkwindow"
 		type = MAIN
